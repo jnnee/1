@@ -1,0 +1,4 @@
+<!--pages/tianchepai/tianchepai.wxml.wxml-->
+<text class="box"> 请绑定自己的车牌</text>
+<input  class="item" bindinput="getValue" placeholder="该项填写后不可修改，确认前请再三查看"> </input>
+<button class="enter" bindtap="enter" >确认</button>

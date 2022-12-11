@@ -1,0 +1,122 @@
+.bottom-bar {
+  background-color: white;
+}
+
+.map{
+  width:100%;
+  height:200px;
+  margin: 0 auto;
+}
+.parking-list-container{
+  margin-bottom: 15rpx;
+}
+.parking-list-section{
+    background-color: white;
+    /*padding: 20rpx;*/
+    /*margin: 20rpx 0;*/
+    display: flex;
+    /*border-bottom: 1rpx solid gainsboro;*/
+    border-radius: 15rpx;
+    margin:10rpx 15rpx;
+}
+
+.parking-list-section:last-child{
+    
+    border-bottom: none;
+}
+
+.parking-list-item{
+   height: 30px;
+    margin: 15rpx;
+}
+.wenzi-item{
+  height: 10px;
+  font:#eee;
+}
+
+.plain-text{
+    font-size: 14px;
+    color: gray;
+}
+
+.parking-name{
+  height: 25px;
+    font-size: 18px;
+    color:black;
+}
+
+.left-number{
+    display: inline-block;
+    color: green;
+    font-size: 16px;
+}
+
+.parking-distance{
+    display: inline-block;
+    font-size: 14px;
+    margin-top: -5px;
+    color: gray;
+}
+
+.content{
+    justify-content: space-between;
+    padding:10px;
+    flex: 1
+}
+
+.parkingLot{
+  height: 15px;
+  font-size: 12;
+}
+
+
+
+.parking-distance{
+    display: inline-block;
+    font-size: 14px;
+    color: gray;
+}
+
+.content{
+    justify-content: space-between;
+    padding:10rpx;
+    flex: 1
+}
+.arrow-right{
+  float: right;
+  height: 30px;
+  width: 20px;
+}
+.nearby-parkingLot{
+  height: 50px;
+  padding: 10rpx;
+}
+.menu-annotation{
+  height: 30px;
+}
+.button-icon{
+  margin-left: 2px;
+  float: left;
+  width: 20px;
+  height: 30px;
+}
+.menu-list-item{
+  height: 40px;
+}
+.menu-list-icon{
+  margin-left: 3px;
+  float: left;
+  width: 20px;
+  height: 20px;
+}
+.line{
+  width: 100%;
+  height: 1px;
+  margin-top: 8px;
+  background-color: #eee;
+}
+.menu-arrow-right{
+  float: right;
+  width: 20px;
+  height: 20px;
+}

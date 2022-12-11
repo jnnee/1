@@ -1,0 +1,5 @@
+<image src="../../images/index.png"></image>
+<div class="container">
+<div class="btn btn1" bindtap="nextpage2">我要停车</div>
+<div class="btn btn2" bindtap="nextpage2">我是管理</div>
+</div>

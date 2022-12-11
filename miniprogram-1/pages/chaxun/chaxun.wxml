@@ -1,0 +1,30 @@
+<view class="sousuo">
+<input
+class="shuru"
+ placeholder="请输入车牌号"
+bindinput="getValue"
+focus="true"
+></input>
+<button class="enter" bindtap="goSearch" >确认</button>
+</view>
+<view wx:if="{{list&&list.length>0}}">
+搜索结果如下：
+  <view wx:for="{{list}}" wx:key='index'>
+    <view class="item" >
+    <view >车牌号：{{item.chepaihao}}</view>
+    <view class="phone_number">
+    <text class="weiixinbox">微信通知他移车</text>
+    <image src="../../images/iconfont/weixin.png"
+    class="weixin_icon" bindtap="weixinyicheAction"></image>
+  </view>
+    <view class="phone_number">
+    <text class="call_number">打电话通知他移车</text>
+    <image src="../../images/iconfont/phone.png"
+    class="phone_icon" data-reply-phone="{{item.phone}}" bindtap="phoneCall"></image>
+  </view>
+  </view>
+</view>
+<view wx:if="{{list&&list.length==0}}">
+搜索内容为空
+</view>
+</view>

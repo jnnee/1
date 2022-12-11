@@ -1,0 +1,41 @@
+<!--pages/detail/detail.wxml-->
+<view style="width:100%;height:auto;position: relative;margin-bottom:15rpx;">
+  <swiper autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" class="swiper-img">
+    <block wx:key="{{imgUrls}}">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" mode="scaleToFill" />
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class="parking-name">公园派停车场</view>
+</view>
+<view class="info-list-container">
+  <view class="info-list-item">
+    <image class="info-list-icon" src="/images/iconfont/mobile_02.png"></image>
+    <view class="info-list-content">
+      <text class="info-list-key">位置</text>
+      <text class="info-list-value">公园派停车场652号</text>
+    </view>
+  </view>
+  <view classs="line"></view>
+  <view class="box" >
+    <view class="column" >
+      <view class="text-center" style="font-size:16px;color:gray;margin:15rpx 0;">总车位</view>
+      <view class="text-center" style="font-size:30px;color:orange;margin:15rpx 0;">120</view>
+    </view>
+    <view class="column">
+      <view class="sidebar"></view></view>
+   
+    <view class="column">
+      <view class="text-center" style="font-size:16px;color:gray;margin:15rpx 0;">剩余车位</view>
+      <view class="text-center" style="font-size:30px;color:green;margin:15rpx 0;">48</view>
+    </view>
+  </view>
+</view>
+
+<view class="bottom-btn-group">
+  <button class="xiabottom" bindtap="preOrder">预约车位</button>
+  <button class="xiabottom" bindtap="openLocation">
+    <image class="button-icon" src="/images/iconfont/map_marker.png"></image>
+    查看路线</button>
+</view>

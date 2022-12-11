@@ -1,0 +1,60 @@
+<!--index.wxml-->
+<view></view>
+<map id="map" longitude="104.674557 " latitude="28.80967 " scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" bindregionchange="regionchange" show-location class="map"></map>
+<view class="parkingLot">
+  <text class="plain-text inline-block">学校范围有</text>
+  <text class="left-number inline-block">5</text>
+  <text class="plain-text inline-block">可选停车区域</text>
+</view>
+<view class="parking-list-container">
+  <view class="parking-list-section center" bindtap="bindParkingListItemTap">
+    <view class="content">
+      <view class="parking-list-item ">
+        <view class="parking-name">文化广场
+        </view>
+      </view>
+        <view class="plain-text">剩余车位:
+          <view class="left-number">43</view>
+        </view>
+      </view>
+    <image class="arrow-right" src="/images/arrowright.png"></image>
+  </view>
+</view>
+  <view class="parking-list-section center">
+    <view class="content">
+      <view class="parking-list-item flex">
+        <view class="parking-name">南门</view>
+      </view>
+        <view class="plain-text">剩余车位:
+          <view class="left-number">43</view>
+        </view>
+      </view>
+    <image class="arrow-right" src="/images/arrowright.png"></image>
+  </view>
+  <view class="parking-list-section center">
+    <view class="content">
+      <view class="parking-list-item flex">
+        <view class="parking-name">校内停车场</view>
+      </view>
+        <view class="plain-text">剩余车位:
+          <view class="left-number">23</view>
+        </view>
+      </view>
+    <image class="arrow-right" src="/images/arrowright.png"></image>
+</view>
+<view class="menu-annotation">更多</view>
+<view class="menu-list-container center">
+  <view class="menu-list-item">
+    <image src="/images/iconfont/day_view.png" class="menu-list-icon"></image>
+    <text class="menu-list-text">查看全部</text>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+    <view class="line"></view>
+  </view>
+  <view class="bottom-btn plain u-auto" style="" bindtap="openParkingMap">
+    <image class="button-icon" src="/images/iconfont/location.png"></image>
+    <text class="menu-list-text">查看车辆位置</text>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+    <view class="line"></view>
+    
+  </view>
+</view>

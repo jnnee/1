@@ -1,0 +1,57 @@
+{
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "pages": [
+    "pages/xuanze/xuanze",
+    "pages/parkingLotList/parkingLotList",
+    "pages/chaxun/chaxun",
+    "pages/tongxing/tongxing",
+    "pages/logs/logs",
+    "pages/denglu/denglu",
+    "pages/first/first",
+    "pages/yiche/yiche",
+    "pages/project config.json",
+    "pages/project config/project config",
+    "pages/xiugaiziliao/xiugaiziliao",
+    "pages/tianchepai/tianchepai",
+    "pages/aboutus/aboutus",
+    "pages/preOrder/preOrder",
+    "pages/detail/detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "selectedColor": "#111",
+    "color": "black",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/chaxun/chaxun",
+        "text": "查询",
+        "iconPath": "./images/iconfont/denglu.png",
+        "selectedIconPath": "./images/iconfont/denglu_.png"
+      },
+      {
+        "pagePath": "pages/tongxing/tongxing",
+        "text": "停车",
+        "iconPath": "./images/iconfont/tongxing.png",
+        "selectedIconPath": "./images/iconfont/tongxing_.png"
+      },
+      {
+        "pagePath": "pages/denglu/denglu",
+        "text": "登录",
+        "iconPath": "./images/iconfont/denglu.png",
+        "selectedIconPath": "./images/iconfont/denglu_.png"
+      }
+    ]
+  }
+}

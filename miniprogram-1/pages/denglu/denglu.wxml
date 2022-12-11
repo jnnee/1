@@ -1,0 +1,59 @@
+<view class="backGround"></view>
+<!-- 未登录时的页面 -->
+<block wx:if="{{hiddenBlean1}}">
+  <view class="container-out">
+      <view class="faceOut"></view>
+      <view class="textout">
+          <view class="word1">
+               <text>未登录</text>
+          </view>
+          <view class="word2">
+               <text>请点击登陆后使用全部功能</text>
+          </view>
+      </view>
+  </view>
+  <button bindtap="getUersProfile" class="btn">登录</button>
+</block>
+<!-- 登陆后的页面 -->
+<block wx:if="{{hiddenBlean2}}">
+<!-- 头像，用户名，招呼 -->
+  <view class="container-in">
+    <image  class="panel-pic" src="/images/bg.jpg" mode="aspectFill">
+  </image>
+  <image class="avatar-icon" src="{{avatarUrl}}"></image>
+  <view class="nickName">
+         <text>请先修改资料</text>
+       </view>
+  </view>
+  <view class="container" >
+    <view class="border">
+     <view class="item" bindtap="tianchepai" wx:for="{{list}}">
+    <image src="/images/iconfont/day_view.png" class="menu-list-icon"></image>
+    <text class="menu-list-text">我的车牌</text>
+    <text class="menu-comment">{{item.chepaihao}}</text>
+    <image class="menu-arrow-right " src="/images/arrowright.png"></image>
+    <view class="line"></view>
+  </view>
+  <view class="item" bindtap="xiugaiziliao">
+    <image src="/images/iconfont/info.png" class="menu-list-icon"  > </image>
+    <text class="menu-list-text">个人资料</text>
+    <text class="menu-comment">修改个人资料</text>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+    <view class="line"></view>
+  </view>
+  <view class="item" bindtap="aboutus">
+    <image src="/images/iconfont/money_bag.png" class="menu-list-icon" ></image>
+    <text class="menu-list-text">关于我们</text>
+    <text class="menu-comment">关于我们</text>
+    <image class="menu-arrow-right" src="/images/arrowright.png"></image>
+    <view class="line"></view>
+  </view>
+</view>
+
+<view  wx:for="{{list}}"class="menu-annotation">已登录手机号:{{item.number}}</view>
+</view>
+
+  <view class="loginOut" bindtap="loginOut">
+       <button>退出登录</button>
+  </view>
+</block> 

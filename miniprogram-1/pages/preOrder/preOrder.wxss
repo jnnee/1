@@ -1,0 +1,13 @@
+/* pages/preOrder/preOrder.wxss */
+.center{
+  height: 40px;
+}
+.right{
+  width: 30px;
+  height: 30px;
+  float: right;
+}
+.menu-comment{
+float: right;
+color: gray;
+}

@@ -1,0 +1,8 @@
+
+<text class="box">我的专业</text>
+<input  class="item" bindinput="getValue1" > </input>
+<text class="box">我的班级</text>
+<input  class="item" bindinput="getValue2" > </input>
+<text class="box">我的电话号码</text>
+<input  class="item" placeholder="为了方便联系你，该项填写后确认是否正确" bindinput="getValue3" > </input>
+<button class="enter" bindtap="enter" >确认</button>
